@@ -60,10 +60,8 @@ p {
     font-size: 1.2rem;
 }
 
-button {
+a {
     cursor: pointer;
-    background-color: transparent;
-    border: none;
 }
 
 
@@ -141,7 +139,7 @@ header {
     display: flex;
     justify-content: end;
 
-    button {
+    a {
         width: 50px;
         padding-left: 15px;
     }
@@ -211,7 +209,7 @@ header {
 main {
     .container {
         display: grid;
-        padding: 100px 30px 100px 30px;
+        padding: 50px 30px 100px 30px;
     }
 }
 
@@ -258,7 +256,7 @@ main {
     grid-template-columns: 5fr 2fr;
     grid-template-rows: 2fr 5fr;
     grid-template-areas: 
-        "title buttons"
+        "title links"
         "description description";
 }
 
@@ -275,11 +273,13 @@ main {
 .p2__icons-container {
     padding: 10px 15px 0 0;
 
-    grid-area: buttons;
+    grid-area: links;
     justify-self: end;
 
-    button {
-        width: 40px;
+    a {
+        display: inline-block;
+        width: 25px;
+        padding: 5px 0 0 5px;
     }
 }
 
@@ -346,6 +346,10 @@ footer {
 }
 
 /* -- c1 -- */
+.c1__box-address {
+    padding-right: 20px;
+}
+
 .c1__box-address h2 {
     color: white;
     padding-bottom: 2rem;
@@ -374,7 +378,7 @@ footer {
     display: flex;
     justify-content: start;
 
-    button {
+    a {
         width: 60px;
         padding: 0 20px 20px 0;
     }
@@ -388,7 +392,7 @@ footer {
 }
 
 
-/* ---------- MEDIA ---------- */
+/* ---------- CONTACT: Media queries ---------- */
 @media (max-width: 1199px) {
     .c1__box-address {
         padding-right: 20px;
